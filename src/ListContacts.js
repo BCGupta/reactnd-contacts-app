@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+
 class ListContacts extends Component {
     static propTypes = {
         contacts: PropTypes.array.isRequired,
@@ -30,7 +31,7 @@ render() {
         : contacts.filter((c) => (
             c.name.toLowerCase().includes(query.toLowerCase())
         ))
-    
+
     return (
 <div className='list-contacts'>
 
